@@ -78,7 +78,7 @@ export function FormAddImage({ closeModal }: FormAddImageProps): JSX.Element {
         })
         return
       }
-      await mutation.mutate({...data, url: imageUrl})
+      await mutation.mutateAsync({...data, url: imageUrl})
       toast({
         status: 'success',
         title: 'Imagem cadastrada',
